@@ -73,7 +73,7 @@ angular.module('ngApp.facebook', ['ngRoute','ngFacebook'])
                 $scope.isLoggedIn = true;
                 $scope.userInfo = response;
                 $facebook.api("/me/posts").then(function (response) {
-                    $scope.posts = reponse.data;
+                    $scope.posts = response.data;
                     console.log(response);
                     
                 });
