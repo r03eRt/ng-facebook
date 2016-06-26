@@ -35,9 +35,9 @@
 
         </div>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-8" ng-if="isLoggedIn == true">
         <h3>Welcome to Facebook</h3>
-        <form action="">
+        <form ng-submit="postStatus()">
             <div class="form-group"><label for="">Status update</label>
                 <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
             </div>
@@ -50,9 +50,12 @@
             </div>
             <div class="sttext">
                 {{ post.message }}
-                <div class="sttime">{{ post.updated_time }}</div>
+                <div class="sttime">{{ post.created_time }}</div>
             </div>
 
+        </div>
+        <div ng-if="isLoggedIn == false">
+            <p>You need to be logged to see your timeline</p>
         </div>
     </div>
 

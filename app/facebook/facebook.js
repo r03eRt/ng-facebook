@@ -5,7 +5,7 @@ angular.module('ngApp.facebook', ['ngRoute','ngFacebook'])
     //https://cpanel.hostinger.es/git/deploy/aid/7432574/id/55148
     .config( function( $facebookProvider ) {
         $facebookProvider.setAppId('291795137876532');
-        $facebookProvider.setPermissions("email,user_posts,public_profile");
+        $facebookProvider.setPermissions("email,user_posts,public_profile,publish_actions");
     })
 
     .run( function( $rootScope ) {
@@ -52,6 +52,16 @@ angular.module('ngApp.facebook', ['ngRoute','ngFacebook'])
                 //cojemos los datos si todo ok
                 refresh();
             });
+        }
+
+
+        $scope.postStatus = function () {
+            var body = this.body;
+            $facebook.api("/me/feed?message={"+this.body+"}&amp;").then(function (response) {
+                console.log(response);
+                console.log("todo fue ok");
+            });
+
         }
 
         function refresh() {
