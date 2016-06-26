@@ -39,8 +39,33 @@ angular.module('ngApp.facebook', ['ngRoute','ngFacebook'])
         $scope.login = function(){
             //promesa para logearnos
             $facebook.login().then(function(){
-                console.log('user logged in');
+                $scope.isLoggedIn = true;
+                //cojemos los datos si todo ok
+                refresh();
             });
+        }
+
+        $scope.logout = function(){
+            //promesa para logearnos
+            $facebook.logout().then(function(){
+                $scope.isLoggedIn = false;
+                //cojemos los datos si todo ok
+                refresh();
+            });
+        }
+
+        function refresh() {
+            $facebook.api("/me").then(function (response) {
+                console.log(response);
+                $scope.welcomeMsg = "Welcome "+ response.name;
+                $scope.isLoggedIn = true;
+                $scope.userInfo = response;
+            },
+            function (error) {
+                $scope.welcomeMsg = "please Log in";
+
+            })
+
         }
 
     }]);
