@@ -56,8 +56,8 @@
       <file leaf-file-name="facebook.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/facebook/facebook.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+            <state relative-caret-position="87">
+              <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -401,12 +401,12 @@
       <workItem from="1466898936772" duration="63000" />
       <workItem from="1466899002494" duration="629000" />
       <workItem from="1466930965496" duration="1206000" />
-      <workItem from="1466932934882" duration="10392000" />
+      <workItem from="1466932934882" duration="10534000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12546000" />
+    <option name="totallyTimeSpent" value="12688000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="710" extended-state="6" />
@@ -562,8 +562,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/facebook/facebook.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+        <state relative-caret-position="87">
+          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
           <folding />
         </state>
       </provider>
