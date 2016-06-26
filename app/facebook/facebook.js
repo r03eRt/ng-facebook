@@ -55,7 +55,7 @@ angular.module('ngApp.facebook', ['ngRoute','ngFacebook'])
         }
 
         function refresh() {
-            debugger;
+
             $facebook.api("/me").then(function (response) {
                 console.log(response);
                 $scope.welcomeMsg = "Welcome "+ response.name;
@@ -66,7 +66,7 @@ angular.module('ngApp.facebook', ['ngRoute','ngFacebook'])
                 $scope.welcomeMsg = "please Log in";
 
             })
-
+            debugger;
         }
 
         refresh();
