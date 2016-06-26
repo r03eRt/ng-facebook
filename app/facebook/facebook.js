@@ -68,4 +68,6 @@ angular.module('ngApp.facebook', ['ngRoute','ngFacebook'])
 
         }
 
+        refresh();
+
     }]);
