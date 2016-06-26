@@ -45,14 +45,17 @@
         </form>
         <br><br>
         <div ng-repeat="post in posts">
-            <div class="stimg">
+            <!--<div class="stimg">
                 <img src="{{ picture }}" alt="">
             </div>
             <div class="sttext">
                 {{ field.message }}
                 <div class="sttime">{{ field.updated_time }}</div>
-            </div>
-            
+            </div>-->
+            {{ post.message }}
+            {{ post.created_time }}
+            {{ post.id }}
+
         </div>
     </div>
 
