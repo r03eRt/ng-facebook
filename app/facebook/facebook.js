@@ -66,7 +66,6 @@ angular.module('ngApp.facebook', ['ngRoute','ngFacebook'])
                 $scope.welcomeMsg = "please Log in";
 
             })
-            debugger;
         }
 
         refresh();
