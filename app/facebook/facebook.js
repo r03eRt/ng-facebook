@@ -33,6 +33,14 @@ angular.module('ngApp.facebook', ['ngRoute','ngFacebook'])
         });
     }])
 
-    .controller('facebookCtrl', [function() {
+    .controller('facebookCtrl', ['$scope','$facebook',function($scope, $facebook) {
+
+        $scope.isLoggedIn = false;
+        $scope.login = function(){
+            //promesa para logearnos
+            $facebook.login().then(function(){
+                console.log('user logged in');
+            })
+        }
 
     }]);
