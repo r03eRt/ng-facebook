@@ -1,11 +1,12 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+angular.module('ngApp', [
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
+  'ngApp.view1',
+  'ngApp.view2',
+  'ngApp.facebook',
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.otherwise({redirectTo: '/facebook'});
 }]);
