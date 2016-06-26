@@ -1,6 +1,9 @@
 <div class="row" ng-controller="facebookCtrl">
     <div class="col-md-4">
         <h4>{{ welcomeMsg }}</h4>
+        <div ng-if="isLoggedIn == true">
+            <a href="{{ userInfo.link }}" target="_blank"><img ng-src="{{ userInfo.picture.data.url }}" alt=""></a>
+        </div>
         <div ng-if="isLoggedIn == false">
             <button class="btn btn-default" ng-click="login()">Login</button>
         </div>
@@ -11,9 +14,6 @@
         <br><br>
         <div class="well" ng-if="isLoggedIn == true">
             <h4>User Info</h4>
-            <div style="height: 220px" class="col-md-12">
-                <img ng-src="{{userInfo.picture.data.url}}" alt="" style="width:100%; height:auto">
-            </div>
             <ul>
                 <li>ID: {{ userInfo.id }}</li>
                 <li>Fist name: {{ userInfo.first_name }}</li>
