@@ -2,6 +2,7 @@
 
 angular.module('ngApp.facebook', ['ngRoute','ngFacebook'])
 
+    //deploy url https://cpanel.hostinger.es/git/deploy/aid/7432574/id/55148
     .config( function( $facebookProvider ) {
         $facebookProvider.setAppId('291795137876532');
         $facebookProvider.setPermissions("email, user_likes, public_profile, user_posts, public-actions, user_photos");
