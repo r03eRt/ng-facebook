@@ -55,7 +55,7 @@ angular.module('ngApp.facebook', ['ngRoute','ngFacebook'])
         }
 
         function refresh() {
-            $facebook.api("/me?fields=albums.limit(5),posts.limit(5)").then(function (response) {
+            $facebook.api("/me").then(function (response) {
                 console.log(response);
                 $scope.welcomeMsg = "Welcome "+ response.name;
                 $scope.isLoggedIn = true;
