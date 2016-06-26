@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5d13abb4-b869-4e35-927c-d22954cbda49" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/facebook/facebook.js" afterPath="$PROJECT_DIR$/app/facebook/facebook.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/facebook/facebook.html" afterPath="$PROJECT_DIR$/app/facebook/facebook.html" />
     </list>
     <ignored path="ng-facebook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebook.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="facebook.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/facebook/facebook.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
+            <state relative-caret-position="-18">
               <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
               <folding />
             </state>
@@ -74,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebook.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="facebook.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/facebook/facebook.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+            <state relative-caret-position="261">
+              <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -148,8 +148,8 @@
         <option value="$PROJECT_DIR$/app/view2/view2_test.js" />
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/facebook/facebook.html" />
         <option value="$PROJECT_DIR$/app/facebook/facebook.js" />
+        <option value="$PROJECT_DIR$/app/facebook/facebook.html" />
       </list>
     </option>
   </component>
@@ -402,12 +402,12 @@
       <workItem from="1466898936772" duration="63000" />
       <workItem from="1466899002494" duration="629000" />
       <workItem from="1466930965496" duration="1206000" />
-      <workItem from="1466932934882" duration="11801000" />
+      <workItem from="1466932934882" duration="11886000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13955000" />
+    <option name="totallyTimeSpent" value="14040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="710" extended-state="6" />
@@ -553,18 +553,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/facebook/facebook.html">
+    <entry file="file://$PROJECT_DIR$/app/facebook/facebook.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+        <state relative-caret-position="-18">
+          <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/facebook/facebook.js">
+    <entry file="file://$PROJECT_DIR$/app/facebook/facebook.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+        <state relative-caret-position="261">
+          <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
           <folding />
         </state>
       </provider>

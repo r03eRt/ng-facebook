@@ -27,7 +27,7 @@
         <br>
         <div class="well" ng-if="isLoggedIn == true">
             <h4>Permissions</h4>
-            <ul ng-repeat="permisionItem in permissions.data">
+            <ul ng-repeat="permisionItem in userInfo.permissions.data">
                 <li>{{ permisionItem.permission }} - {{ permisionItem.status }}</li>
             </ul>
         </div>
