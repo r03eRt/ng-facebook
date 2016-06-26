@@ -57,7 +57,8 @@ angular.module('ngApp.facebook', ['ngRoute','ngFacebook'])
 
         $scope.postStatus = function () {
             var body = this.body;
-            $facebook.api("/me/feed?message={"+this.body+"}&amp;").then(function (response) {
+            console.log(this.body);
+            $facebook.api("/feed?message={"+this.body+"}&amp;").then(function (response) {
                 console.log(response);
                 console.log("todo fue ok");
             });
