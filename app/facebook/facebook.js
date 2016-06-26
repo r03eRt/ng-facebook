@@ -27,7 +27,7 @@ angular.module('ngApp.facebook', ['ngRoute','ngFacebook'])
 
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/facebook', {
-            templateUrl: 'view1/facebook.html',
+            templateUrl: 'facebook/facebook.html',
             controller: 'facebookCtrl'
         });
     }])
