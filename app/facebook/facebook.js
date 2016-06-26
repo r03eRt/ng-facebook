@@ -5,7 +5,7 @@ angular.module('ngApp.facebook', ['ngRoute','ngFacebook'])
     //https://cpanel.hostinger.es/git/deploy/aid/7432574/id/55148
     .config( function( $facebookProvider ) {
         $facebookProvider.setAppId('291795137876532');
-        $facebookProvider.setPermissions("email", "user_likes", "public_profile", "user_posts", "public_actions", "user_photos");
+        $facebookProvider.setPermissions("email,user_likes,public_profile,user_posts,public_actions,user_photos");
     })
 
     .run( function( $rootScope ) {
@@ -72,11 +72,18 @@ angular.module('ngApp.facebook', ['ngRoute','ngFacebook'])
                 $scope.welcomeMsg = "Welcome "+ response.name;
                 $scope.isLoggedIn = true;
                 $scope.userInfo = response;
+                $facebook.api("/me?fields=").then(function (response) {
+                    
+                });
             },
             function (error) {
                 $scope.welcomeMsg = "please Log in";
 
-            })
+            });
+            
+            
+            
+            
         }
 
         refresh();
