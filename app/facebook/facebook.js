@@ -59,8 +59,6 @@ angular.module('ngApp.facebook', ['ngRoute','ngFacebook'])
             var body = this.body;
             console.log(this.body);
             $facebook.api("/me/feed", "post",{message: this.body}).then(function (response) {
-                console.log(response);
-                console.log("todo fue ok");
             });
 
         }
